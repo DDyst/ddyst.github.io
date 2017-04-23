@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Black Ops One";
+  src:
+    local("Black Ops One"),
+    local("BlackOpsOne-Regular"),
+    url("../fonts/BlackOpsOne-Regular.woff2") format("woff2"),
+    url("../fonts/BlackOpsOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src:
+    local("Open Sans Bold"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}

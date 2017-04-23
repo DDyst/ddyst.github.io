@@ -1,0 +1,31 @@
+.social-btn {
+	display: block;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+  &--github {
+    background: url("../img/github.svg") no-repeat center/35px auto;
+  }
+  &--academy {
+    background: #000000 url("../img/htmlacademy.svg") no-repeat center 4px/30px auto;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-btn {
+    width: 40px;
+    height: 40px;
+    &--github {
+      background: url("../img/github.svg") no-repeat center/40px auto;
+    }
+    &--academy {
+      background: #000000 url("../img/htmlacademy.svg") no-repeat center 4px/35px auto;
+    }
+  }
+}

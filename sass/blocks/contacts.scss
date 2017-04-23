@@ -1,0 +1,38 @@
+.contacts {
+	text-align: center;
+}
+
+.contacts__link {
+  font-size: 18px;
+  line-height: 30px;
+	font-family: "Black Ops One", "Arial", sans-serif;
+	text-decoration: none;
+	color: #999999;
+  &--with-icon {
+    padding-left: 30px;
+    background: url("../img/mail.svg") no-repeat left center/25px auto;
+  }
+	&:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+	}
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__link {
+    font-size: 20px;
+    &--with-icon {
+      padding-left: 40px;
+      background: url("../img/mail.svg") no-repeat left center/30px auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__link {
+    font-size: 24px;
+  }
+}
