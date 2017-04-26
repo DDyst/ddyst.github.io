@@ -11,10 +11,13 @@
   &--with-icon {
     padding-left: 30px;
     background: url("../img/mail.svg") no-repeat left center/25px auto;
+    &:hover {
+      background-image: url("../img/mail-hover.svg");
+    }
   }
 	&:hover {
     text-decoration: underline;
-    opacity: 0.5;
+    color: #000000;
 	}
   &:active {
     opacity: 0.2;

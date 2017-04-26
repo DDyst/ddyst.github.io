@@ -5,12 +5,15 @@
 	border-radius: 50%;
   &--github {
     background: url("../img/github.svg") no-repeat center/35px auto;
+    &:hover {
+      background-image: url("../img/github-hover.svg");
+    }
   }
   &--academy {
-    background: #000000 url("../img/htmlacademy.svg") no-repeat center 4px/30px auto;
-  }
-  &:hover {
-    opacity: 0.5;
+    background: #999999 url("../img/htmlacademy.svg") no-repeat center 4px/30px auto;
+    &:hover {
+      background-color: #000000;
+    }
   }
   &:active {
     opacity: 0.2;
@@ -22,10 +25,10 @@
     width: 40px;
     height: 40px;
     &--github {
-      background: url("../img/github.svg") no-repeat center/40px auto;
+      background-size: 40px auto;
     }
     &--academy {
-      background: #000000 url("../img/htmlacademy.svg") no-repeat center 4px/35px auto;
+      background-size: 35px auto;
     }
   }
 }

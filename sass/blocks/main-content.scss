@@ -1,0 +1,21 @@
+.main-content {
+	@include layout-positioner;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+	box-shadow: 0 0 15px -5px rgba(1, 1, 1, 0.4);
+}
+
+@media (min-width: $tablet-width) {
+  .main-content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+	.main-content {
+		padding-top: 30px;
+    padding-bottom: 30px;
+	}
+}
