@@ -1,0 +1,119 @@
+.project {
+	width: 280px;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.4);
+}
+
+.project__img-container {
+  position: relative;
+  width: 280px;
+  height: 180px; 
+}
+
+.project__main-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    &::after {
+      content: "Перейти на страницу проекта";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-size: 14px;
+      line-height: 180px;
+      font-family: "Open Sans Bold", "Arial", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: rgba(1, 1, 1, 0.6);
+    }
+  }
+  &:active {
+    &::after {
+      line-height: 174px;
+      text-decoration: underline;
+      background-color: rgba(1, 1, 1, 0.8);
+      border: 3px solid #ffffff;
+    }
+  }
+}
+
+.project__img-container img {
+  @include image;
+}
+
+.project__info {
+  padding: 16px;
+}
+
+.project__title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+}
+
+.project__features {
+  margin: 20px 0 25px 0;
+  padding-left: 24px;
+  list-style: square;
+}
+
+.project__source-link {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .project {
+    width: 300px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .project__img-container {
+    width: 300px;
+    height: 200px;
+  }
+
+  .project__main-link {
+    &:hover {
+      &::after {
+        font-size: 16px;
+        line-height: 200px;
+      }
+    }
+    &:active {
+      &::after {
+        line-height: 190px;
+        border: 5px solid #ffffff;
+      }
+    }
+  }
+
+  .project__info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 319px;
+    padding: 20px 18px;
+  }
+
+  .project__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .project__features {
+    margin: 23px 0 28px 0;
+  }
+
+  .project__source-link {
+    margin: auto auto 0 auto;
+  }
+}

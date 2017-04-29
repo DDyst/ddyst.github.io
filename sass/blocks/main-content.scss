@@ -4,6 +4,10 @@
 	padding-bottom: 20px;
 	background-color: #ffffff;
 	box-shadow: 0 0 15px -5px rgba(1, 1, 1, 0.4);
+  &--no-bg {
+    background-color: inherit;
+    box-shadow: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

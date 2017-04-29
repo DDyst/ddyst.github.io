@@ -1,6 +1,6 @@
 .page {
 	min-width: $mobile-width;
-  height: 100vh;
+  min-height: 100vh;
   font-weight: 400;
   font-family: "Open Sans", "Arial", sans-serif;
 	background-color: #fbfbfb;
@@ -8,5 +8,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.page__projects {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__projects {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__projects {
+    margin-bottom: 30px;
   }
 }
