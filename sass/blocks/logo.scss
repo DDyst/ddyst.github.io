@@ -19,11 +19,11 @@
 .logo a {
   text-decoration: none;
   color: inherit;
+  transition: 0.4s;
   &:hover {
     text-shadow: 
       3px 3px #000000,
       -3px -3px #000000;
-    transition: 0.4s;
   }
   &:active {
     color: #999999;
