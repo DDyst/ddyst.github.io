@@ -9,7 +9,25 @@
 .project__img-container {
   position: relative;
   width: 280px;
-  height: 180px; 
+  height: 180px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/desktop.svg") no-repeat 8px 142px/30px auto;
+    pointer-events: none;
+  }
+  &--bg-multiple-devices {
+    &::after {
+      background: 
+        url("../img/desktop.svg") no-repeat 8px 142px/30px auto,
+        url("../img/tablet.svg") no-repeat 43px 144px/21px auto,
+        url("../img/mobile.svg") no-repeat 69px 149px/13px auto;
+    }
+  }
 }
 
 .project__main-link {
@@ -24,6 +42,7 @@
       right: 0;
       bottom: 0;
       left: 0;
+      z-index: 10;
       font-size: 14px;
       line-height: 180px;
       font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -79,6 +98,17 @@
   .project__img-container {
     width: 300px;
     height: 200px;
+    &::after {
+      background: url("../img/desktop.svg") no-repeat 10px 154px/33px auto;
+    }
+    &--bg-multiple-devices {
+      &::after {
+        background: 
+          url("../img/desktop.svg") no-repeat 10px 154px/33px auto,
+          url("../img/tablet.svg") no-repeat 49px 156px/23px auto,
+          url("../img/mobile.svg") no-repeat 78px 161px/15px auto;
+      }
+    }
   }
 
   .project__main-link {
