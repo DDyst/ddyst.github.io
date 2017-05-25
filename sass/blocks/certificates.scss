@@ -20,21 +20,26 @@
   position: relative;
   display: block;
   text-decoration: none;
+  &::after {
+    content: attr(aria-label);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 394px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(1, 1, 1, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
   &:hover {
     &::after {
-      content: attr(aria-label);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      font-size: 14px;
-      line-height: 394px;
-      font-family: "Open Sans Bold", "Arial", sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      color: #ffffff;
-      background-color: rgba(1, 1, 1, 0.6);
+      opacity: 1;
     }
   }
   &:active {
@@ -72,11 +77,9 @@
   }
 
   .certificates__link {
-    &:hover {
-      &::after {
-        font-size: 16px;
-        line-height: 422px;
-      }
+    &::after {
+      font-size: 16px;
+      line-height: 422px;
     }
     &:active {
       &::after {
