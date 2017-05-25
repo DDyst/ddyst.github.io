@@ -1,8 +1,53 @@
 .social-btn {
+  position: relative;
 	display: block;
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
+  &::before,
+  &::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: top, bottom, opacity, visibility;
+    transition-duration: 0.3s;
+    pointer-events: none;
+  }
+  &::before {
+    content: attr(data-title);
+    bottom: 140%;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    white-space: nowrap;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+  }
+  &::after {
+    content: "";
+    top: -40%;
+    border-top: 4px solid rgba(0, 0, 0, 0.7);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+      visibility: visible;   
+    }
+    &::before {
+      bottom: 120%;
+    }
+    &::after {
+      top: -20%;
+    }
+  }
   &--github {
     background: url("../img/github.svg") no-repeat center/35px auto;
     &:hover {

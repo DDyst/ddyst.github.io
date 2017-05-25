@@ -22,7 +22,7 @@
   text-decoration: none;
   &:hover {
     &::after {
-      content: "Открыть в формате PDF";
+      content: attr(aria-label);
       position: absolute;
       top: 0;
       right: 0;
