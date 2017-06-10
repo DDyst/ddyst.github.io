@@ -2,7 +2,7 @@
   font-size: 50px;
 	font-family: "Black Ops One", "Arial", sans-serif;
 	text-align: center;
-	color: #fbfbfb;
+	color: #f4f5f6;
   text-shadow: 
     5px 5px #999999,
     -5px -5px #999999;
@@ -19,8 +19,9 @@
 .logo a {
   text-decoration: none;
   color: inherit;
-  transition: 0.4s;
+  transition: all 0.4s;
   &:hover {
+    color: #eff0f1;
     text-shadow: 
       3px 3px #000000,
       -3px -3px #000000;

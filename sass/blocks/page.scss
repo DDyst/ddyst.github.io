@@ -2,7 +2,7 @@
 	min-width: $mobile-width;
   font-weight: 400;
   font-family: "Open Sans", "Arial", sans-serif;
-	background-color: #fbfbfb;
+	background: #f4f5f6 url("../img/bg.png") repeat;
   &--flexible {
     display: flex;
     justify-content: center;
