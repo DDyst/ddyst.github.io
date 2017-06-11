@@ -95,6 +95,8 @@
 
 @media (min-width: $tablet-width) {
   .project {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     font-size: 16px;
     line-height: 26px;
@@ -132,6 +134,7 @@
   .project__info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     min-height: 319px;
     padding: 20px 18px;
@@ -148,6 +151,6 @@
   }
 
   .project__source-link {
-    margin: auto auto 0 auto;
+    margin: 0 auto;
   }
 }
