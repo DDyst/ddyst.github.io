@@ -2,7 +2,7 @@
 	min-width: $mobile-width;
   font-weight: 400;
   font-family: "Open Sans", "Arial", sans-serif;
-	background: #f4f5f6 url("../img/bg.png") repeat;
+	background: #f4f5f6 url("../img/bg@1x.png") repeat;
   &--flexible {
     display: flex;
     justify-content: center;
@@ -17,6 +17,13 @@
 
 .page__projects {
   margin-bottom: 60px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page {
+    background-image: url("../img/bg@2x.png");
+    background-size: 200px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
