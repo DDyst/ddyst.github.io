@@ -44,7 +44,7 @@
     z-index: 10;
     font-size: 14px;
     line-height: 180px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: $font-bold;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -80,7 +80,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-family: $font-bold;
 }
 
 .project__features {

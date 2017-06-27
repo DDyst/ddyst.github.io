@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 30px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-family: $font-bold;
   text-align: center;
 }
 
@@ -29,7 +29,7 @@
     left: 0;
     font-size: 14px;
     line-height: 394px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: $font-bold;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;

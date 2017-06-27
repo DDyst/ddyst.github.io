@@ -1,7 +1,8 @@
 .page {
 	min-width: $mobile-width;
   font-weight: 400;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $font-main;
+  letter-spacing: 0.3px;
 	background: #f4f5f6 url("../img/bg@1x.png") repeat;
   &--flexible {
     display: flex;
