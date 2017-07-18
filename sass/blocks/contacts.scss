@@ -10,9 +10,9 @@
 	color: #999999;
   &--with-icon {
     padding-left: 30px;
-    background: url("../img/mail.svg") no-repeat left center/25px auto;
+    background: url("../img/icon-mail.svg") no-repeat left center/25px auto;
     &:hover {
-      background-image: url("../img/mail-hover.svg");
+      background-image: url("../img/icon-mail-hover.svg");
     }
   }
 	&:hover {
@@ -29,7 +29,7 @@
     font-size: 20px;
     &--with-icon {
       padding-left: 40px;
-      background: url("../img/mail.svg") no-repeat left center/30px auto;
+      background: url("../img/icon-mail.svg") no-repeat left center/30px auto;
     }
   }
 }

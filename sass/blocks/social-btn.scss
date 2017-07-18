@@ -9,10 +9,10 @@
   &::after {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     z-index: 10;
     opacity: 0;
     visibility: hidden;
+    transform: translateX(-50%);
     transition-property: top, bottom, opacity, visibility;
     transition-duration: 0.3s;
     pointer-events: none;
@@ -50,13 +50,13 @@
     }
   }
   &--github {
-    background: url("../img/github.svg") no-repeat center/35px auto;
+    background: url("../img/icon-github.svg") no-repeat center/35px auto;
     &:hover {
-      background-image: url("../img/github-hover.svg");
+      background-image: url("../img/icon-github-hover.svg");
     }
   }
   &--academy {
-    background: #999999 url("../img/htmlacademy.svg") no-repeat center 4px/30px auto;
+    background: #999999 url("../img/icon-htmlacademy.svg") no-repeat center 4px/30px auto;
     &:hover {
       background-color: #000000;
     }
