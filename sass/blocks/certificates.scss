@@ -5,6 +5,7 @@
   line-height: 30px;
   font-family: $font-bold;
   text-align: center;
+  background-image: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
 }
 
 .certificates__item {
@@ -59,7 +60,6 @@
 @media (min-width: $tablet-width) {
   .certificates__heading {
     font-size: 24px;
-    text-align: left;
   }
 
   .certificates__container {
@@ -71,9 +71,6 @@
   .certificates__item {
     width: 300px;
     margin: 0 5px;
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
   }
 
   .certificates__link {
@@ -105,6 +102,9 @@
     margin: 0;
     &:not(:nth-child(3n)) {
       margin-right: 30px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 }

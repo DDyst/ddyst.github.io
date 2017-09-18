@@ -1,14 +1,15 @@
 .logo {
   font-size: 50px;
   line-height: 57.5px;
-	font-family: "Black Ops One", "Arial", sans-serif;
-	text-align: center;
-	color: #f4f5f6;
+  font-family: "Black Ops One", "Arial", sans-serif;
+  text-align: center;
+  color: #f4f5f6;
   text-shadow: 
     5px 5px #999999,
     -5px -5px #999999;
   cursor: default;
-	user-select: none;
+  user-select: none;
+  transition: all 0.4s;
   &--big {
     font-size: 80px;
     line-height: 92px;
@@ -16,12 +17,6 @@
       8px 8px #999999,
       -8px -8px #999999;
   }
-}
-
-.logo a {
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.4s;
   &:hover {
     color: #eff0f1;
     text-shadow: 
@@ -29,14 +24,15 @@
       -3px -3px #000000;
   }
   &:active {
-    color: #999999;
+    color: #000000;
+    text-shadow: none;
   }
 }
 
-.logo--big a {
-  &:active {
-    color: #fbfbfb;
-  }
+.logo a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,14 +48,14 @@
       text-shadow: 
         14px 14px #999999,
         -14px -14px #999999;
-    }
-  }
-
-  .logo--big a {
-    &:hover {
-      text-shadow: 
-        5px 5px #000000,
-        -5px -5px #000000;
+      &:hover {
+        text-shadow: 
+          5px 5px #000000,
+          -5px -5px #000000;
+      }
+      &:active {
+        text-shadow: none;
+      }
     }
   }
 }
@@ -72,14 +68,14 @@
       text-shadow: 
         20px 20px #999999,
         -20px -20px #999999;
-    }
-  }
-
-  .logo--big a {
-    &:hover {
-      text-shadow: 
-        8px 8px #000000,
-        -8px -8px #000000;
+      &:hover {
+        text-shadow: 
+          8px 8px #000000,
+          -8px -8px #000000;
+      }
+      &:active {
+        text-shadow: none;
+      }
     }
   }
 }
