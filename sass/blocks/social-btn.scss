@@ -61,6 +61,12 @@
       background-color: #000000;
     }
   }
+  &--codewars {
+    background: url("../img/icon-codewars.svg") no-repeat center/35px auto;
+    &:hover {
+      background-image: url("../img/icon-codewars-hover.svg");
+    }
+  }
   &:active {
     opacity: 0.2;
   }
@@ -75,6 +81,9 @@
     }
     &--academy {
       background-size: 35px auto;
+    }
+    &--codewars {
+      background-size: 40px auto;
     }
   }
 }
