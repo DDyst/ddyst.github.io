@@ -6,10 +6,11 @@
 
 .main-nav__link {
   display: block;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   font-family: $font-bold;
 	text-decoration: none;
+  text-transform: uppercase;
 	color: #999999;
   &--current {
     color: #000000;
@@ -22,7 +23,7 @@
     opacity: 0.5;
   }
   &--bordered {
-    padding: 5px 15px;
+    padding: 5px 14px;
     font-family: $font-main;
     color: #000000;
     background: linear-gradient(#f4f5f6, #e6e6e6);
@@ -47,18 +48,18 @@
   }
   
   .main-nav__link {
-    font-size: 20px;
+    font-size: 16px;
     &--bordered {
-      padding: 7px 17px;
+      padding: 9px 19px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__link {
+    font-size: 18px;
     &--bordered {
-      padding: 10px 20px;
-      font-size: 22px;
+      padding: 12px 24px;
     }
   }
 }
