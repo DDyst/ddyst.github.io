@@ -70,7 +70,7 @@
 
   .certificates__item {
     width: 300px;
-    margin: 0 5px;
+    margin: 0 5px 40px 5px;
   }
 
   .certificates__link {
@@ -89,7 +89,7 @@
 
 @media (min-width: 800px) {
   .certificates__item {
-    margin: 0 10px;
+    margin: 0 10px 40px 10px;
   }
 }
 
@@ -99,11 +99,11 @@
   }
 
   .certificates__item {
-    margin: 0;
+    margin: 0 0 40px 0;
     &:not(:nth-child(3n)) {
       margin-right: 30px;
     }
-    &:not(:last-child) {
+    &:last-child {
       margin-bottom: 0;
     }
   }
